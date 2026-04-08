@@ -5,8 +5,8 @@ import { offers } from "@/lib/offers";
 import { thankYouPage } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Thank You | rAIzor Crest",
-  description: "Thank-you bridge page for Starter Kit signups moving into the full guide.",
+  title: "Thank You",
+  description: "Thank-you page for Starter Kit signups, with immediate access to the download and the next step.",
 };
 
 export default async function ThankYouPage({
@@ -30,7 +30,7 @@ export default async function ThankYouPage({
               {thankYouPage.title}
             </h1>
             <p className="mx-auto max-w-3xl text-lg leading-8 text-foreground-soft md:text-xl">{thankYouPage.description}</p>
-            {params.firstName ? <p className="text-sm text-muted">Nice, {params.firstName}. The delivery links are below.</p> : null}
+            {params.firstName ? <p className="text-sm text-muted">Nice, {params.firstName}. Your download links are below.</p> : null}
           </div>
         </section>
 
@@ -56,7 +56,7 @@ export default async function ThankYouPage({
                   </a>
                 ))}
               </div>
-              {params.email ? <p className="mt-4 text-sm text-muted">Delivery contact recorded for automation: {params.email}</p> : null}
+              {params.email ? <p className="mt-4 text-sm text-muted">We’ll also send follow-up resources to {params.email}.</p> : null}
             </article>
             {thankYouPage.bridgeCards.map((card) => (
               <article key={card.title} className="panel rounded-[var(--radius-lg)] p-6 md:p-8">

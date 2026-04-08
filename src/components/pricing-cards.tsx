@@ -7,7 +7,7 @@ export function PricingCards() {
     <section id="guide" className="section-pad py-10">
       <div className="container-shell space-y-8">
         <div className="max-w-3xl space-y-4">
-          <span className="eyebrow">Offer ladder preview</span>
+          <span className="eyebrow">Offer ladder</span>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-cream md:text-5xl">
             Match the offer to the buyer’s level of commitment.
           </h2>

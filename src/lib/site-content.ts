@@ -28,14 +28,14 @@ export const navLinks = [
   { label: "Starter Kit", href: "/starter-kit" },
   { label: "Guide", href: "/guide" },
   { label: "Lab", href: "/lab" },
-  { label: "FAQ", href: "/guide#faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const features = [
   {
     title: "Clear offer ladder",
     description:
-      "The homepage now routes cold traffic to the free Starter Kit, warm buyers to the Guide, and serious operators to Lab membership.",
+      "The homepage routes cold traffic to the free Starter Kit, warm buyers to the Guide, and serious operators to Lab membership.",
   },
   {
     title: "Built for operators",
@@ -50,7 +50,7 @@ export const features = [
   {
     title: "Reusable page blocks",
     description:
-      "Shared sections can be recomposed across Starter Kit, Guide, Lab, and Thank You pages without redesign.",
+      "Shared sections keep the funnel consistent from first visit through checkout and onboarding.",
   },
 ];
 
@@ -101,12 +101,12 @@ export const faqs = [
   {
     question: "Do I need to be technical?",
     answer:
-      "No. The site and offers are framed for operators, not engineers. The focus is role design, workflows, guardrails, training, and practical deployment.",
+      "No. The offers are framed for operators, not engineers. The focus is role design, workflows, guardrails, training, and practical deployment.",
   },
   {
-    question: "Are the forms and payments connected yet?",
+    question: "How do payments and delivery work?",
     answer:
-      "Yes. Lead capture, checkout routing, delivery links, and post-purchase handoff are wired. Stripe price IDs and automation webhooks can be dropped in via environment variables for production.",
+      "Lead capture, checkout, and post-purchase delivery are set up for a clean customer journey. Stripe pricing and fulfillment routing are controlled through environment configuration before launch.",
   },
 ];
 
@@ -182,11 +182,11 @@ export const thankYouPage = {
   eyebrow: "You’re in",
   title: "Starter Kit requested. Next move: don’t lose momentum.",
   description:
-    "The worksheet gets the role chosen. The full guide shows you how to build the employee, train the system, and make the leverage stick.",
+    "Your worksheet bundle is ready below. Use it to choose the role, then move into the full guide when you're ready to build the system behind it.",
   checklist: [
-    "Check your inbox for the Starter Kit delivery when email wiring is connected",
+    "Download the Starter Kit below and save it somewhere your team can access",
     "Block 30 minutes to complete the role scorecard and guardrails pages",
-    "Use the guide page below to move from planning into implementation",
+    "Use the guide page when you are ready to move from planning into implementation",
   ],
   bridgeCards: [
     {
@@ -217,7 +217,7 @@ export const guidePage = {
   ],
   chapterGroups: [
     {
-      title: "Part 1 — Design the employee",
+      title: "Part 1, Design the employee",
       items: [
         "Stop thinking tool, start thinking role",
         "What makes a strong first AI employee",
@@ -226,7 +226,7 @@ export const guidePage = {
       ],
     },
     {
-      title: "Part 2 — Build the system",
+      title: "Part 2, Build the system",
       items: [
         "Choose a minimal stack that supports the role",
         "Write the brain: identity, mission, responsibilities, boundaries",
@@ -235,7 +235,7 @@ export const guidePage = {
       ],
     },
     {
-      title: "Part 3 — Run it like an operator",
+      title: "Part 3, Run it like an operator",
       items: [
         "Assign the first recurring tasks and build a real backlog",
         "Manage performance with scorecards and review rhythm",
@@ -264,7 +264,7 @@ export const guidePage = {
     },
   ],
   checkoutNote:
-    "The guide CTA now posts into a checkout route. In production, add Stripe price IDs and webhook secrets. In local or unconfigured environments, the mock flow still verifies redirect, delivery, and Lab handoff.",
+    "Checkout is configured through Stripe price IDs and fulfillment routes, so the buying flow can move cleanly from payment into delivery and onboarding.",
 };
 
 export const labPage = {
@@ -293,7 +293,7 @@ export const labPage = {
     },
     {
       title: "Implementation help",
-      description: "When things break in the real world, you need applied support — not another generic webinar about the future.",
+      description: "When things break in the real world, you need applied support, not another generic webinar about the future.",
     },
     {
       title: "Q&A and community",
@@ -335,8 +335,8 @@ export const labPage = {
     },
   ] as LabPlan[],
   wiringNotes: [
-    "Set Stripe monthly and annual price IDs to switch from mock checkout to production checkout.",
-    "Connect the automation webhook to Circle, Skool, Discord, Kajabi, or your chosen member system for provisioning.",
-    "Add event tracking for view_lab, click_join_monthly, and click_join_annual before launch.",
+    "Stripe monthly and annual price IDs control live checkout for each membership tier.",
+    "Provisioning should hand off into your member system, such as Circle, Skool, Discord, or Kajabi.",
+    "Add analytics for page views, checkout starts, and paid conversions before paid traffic goes live.",
   ],
 };

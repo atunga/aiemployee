@@ -2,13 +2,16 @@ function getBaseUrl() {
   return process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "http://localhost:3000";
 }
 
+const appEnv = process.env.NODE_ENV || "development";
+const previewCheckoutEnabled = process.env.MOCK_CHECKOUT_ENABLED === "true" && appEnv !== "production";
+
 export const env = {
-  appEnv: process.env.NODE_ENV || "development",
+  appEnv,
   baseUrl: getBaseUrl(),
   automationWebhookUrl: process.env.AUTOMATION_WEBHOOK_URL || "",
   stripeSecretKey: process.env.STRIPE_SECRET_KEY || "",
   stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET || "",
-  mockCheckoutEnabled: process.env.MOCK_CHECKOUT_ENABLED !== "false",
+  mockCheckoutEnabled: previewCheckoutEnabled,
   priceIds: {
     guide: process.env.STRIPE_PRICE_GUIDE || "",
     guide_toolkit: process.env.STRIPE_PRICE_GUIDE_TOOLKIT || "",

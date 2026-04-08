@@ -12,12 +12,12 @@ export function EmailForm() {
               Capture the email. Deliver the Starter Kit. Move the buyer journey forward.
             </h2>
             <p className="text-lg leading-8 text-foreground-soft">
-              This form is live now. It captures the lead, records delivery metadata, and redirects successful opt-ins to the thank-you bridge.
+              Use this opt-in to get the Starter Kit, save the right delivery details, and move straight into the next step when the timing is right.
             </p>
             <div className="rounded-[var(--radius-lg)] border border-border bg-background-alt/80 p-5 text-sm leading-7 text-foreground-soft">
-              <p className="font-medium text-cream">Implementation note</p>
+              <p className="font-medium text-cream">What happens next</p>
               <p className="mt-2">
-                Delivery links live on the <Link href="/thank-you" className="text-mint transition hover:text-mint-strong">thank-you bridge page</Link>, and automation tags are ready for an ESP or CRM webhook.
+                Delivery links live on the <Link href="/thank-you" className="text-mint transition hover:text-mint-strong">thank-you page</Link>, and your follow-up sequence can route buyers into the guide or Lab from there.
               </p>
             </div>
           </div>

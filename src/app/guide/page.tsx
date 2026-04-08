@@ -7,7 +7,7 @@ import { PricingCards } from "@/components/pricing-cards";
 import { guidePage } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Guide | rAIzor Crest",
+  title: "Guide",
   description: "Long-form sales page for the Build Your First AI Employee guide.",
 };
 
@@ -57,7 +57,7 @@ export default function GuidePage() {
             <div className="mt-6 rounded-[var(--radius-lg)] border border-mint/20 bg-mint-soft/40 p-5">
               <p className="text-sm uppercase tracking-[0.18em] text-mint-strong">Core promise</p>
               <p className="mt-3 leading-7 text-foreground-soft">
-                This is for people who want AI to own clear, repeatable work inside real workflows — not people collecting shiny tools and calling it strategy.
+                This is for people who want AI to own clear, repeatable work inside real workflows, not people collecting shiny tools and calling it strategy.
               </p>
             </div>
           </aside>
@@ -103,14 +103,14 @@ export default function GuidePage() {
         </div>
 
         <section className="panel rounded-[var(--radius-xl)] border border-orange/20 p-6 md:p-8">
-          <span className="eyebrow">Checkout is wired</span>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Guide payments can now route through Stripe or mock checkout.</h2>
+          <span className="eyebrow">Simple purchase path</span>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Choose the guide option that matches how fast you want to move.</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-foreground-soft">{guidePage.checkoutNote}</p>
         </section>
 
         <CtaBlock
           eyebrow="Why buy now"
-          title="You can keep experimenting with tools — or you can finally build an employee that owns work."
+          title="You can keep experimenting with tools, or you can finally build an employee that owns work."
           description="The guide is the bridge from AI curiosity to operator-grade execution. Buy the guide, use the templates, deploy the first role, and then move into Lab for ongoing support."
           primaryLabel="Buy the guide"
           primaryHref="#pricing"

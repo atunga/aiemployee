@@ -5,7 +5,7 @@ import { LeadCaptureForm } from "@/components/lead-capture-form";
 import { starterKitPage } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Starter Kit | rAIzor Crest",
+  title: "Starter Kit",
   description: "Free Starter Kit to help operators choose and scope their first AI employee.",
 };
 
@@ -52,7 +52,7 @@ export default function StarterKitPage() {
               <div>
                 <h2 className="text-3xl font-semibold tracking-tight text-cream">Get the Starter Kit</h2>
                 <p className="mt-3 text-base leading-7 text-foreground-soft">
-                  This opt-in is wired for lead capture, asset delivery handoff, and the thank-you bridge into the guide offer.
+                  Tell us where to send it, and we’ll move you straight into the worksheet bundle and the next best resource for your stage.
                 </p>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function StarterKitPage() {
                 href="/thank-you"
                 className="inline-flex items-center justify-center rounded-full bg-orange px-6 py-3 font-medium text-slate-950 transition hover:bg-orange-strong"
               >
-                Preview the thank-you bridge
+                See the download page
               </Link>
               <Link
                 href="/guide"

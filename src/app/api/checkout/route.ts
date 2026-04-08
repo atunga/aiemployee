@@ -49,7 +49,7 @@ export async function POST(request: Request) {
     }
 
     if (!env.mockCheckoutEnabled) {
-      return NextResponse.json({ error: "Stripe is not configured for this offer." }, { status: 500 });
+      return NextResponse.json({ error: "Checkout is not configured for this offer yet." }, { status: 503 });
     }
 
     await sendAutomationEvent("checkout.completed", {
@@ -62,7 +62,7 @@ export async function POST(request: Request) {
       tags: offer.tags,
       deliverables: offer.deliveryAssets,
       handoffTarget: offer.handoffTarget || null,
-      mode: "mock"
+      mode: "preview"
     });
 
     const params = new URLSearchParams({ offer: offer.key, email: body.email });

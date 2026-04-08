@@ -92,7 +92,7 @@ export function LeadCaptureForm({ source, compact = false }: LeadCaptureFormProp
           {isSubmitting ? "Sending..." : "Send me the Starter Kit"}
         </button>
         <p className="text-xs leading-6 text-muted">
-          Captures the lead, records tags for automation, and redirects to the thank-you bridge with delivery links.
+          We’ll use your details to deliver the Starter Kit and send the most relevant follow-up resources. You can unsubscribe anytime.
         </p>
         {error ? <p className="text-sm text-orange">{error}</p> : null}
       </div>
