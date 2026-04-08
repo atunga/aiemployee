@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  --background: #111315;
+  --background-alt: #171a1d;
+  --surface: rgba(23, 26, 29, 0.84);
+  --surface-strong: #1c2125;
+  --surface-soft: #252b31;
+  --foreground: #f2eadf;
+  --foreground-soft: rgba(242, 234, 223, 0.74);
+  --muted: #b4aca2;
+  --border: rgba(242, 234, 223, 0.12);
+  --border-strong: rgba(117, 240, 193, 0.22);
+  --mint: #75f0c1;
+  --mint-strong: #9af5d2;
+  --mint-soft: rgba(117, 240, 193, 0.14);
+  --orange: #ff9a57;
+  --orange-strong: #ffb27b;
+  --orange-soft: rgba(255, 154, 87, 0.16);
+  --cream: #f2eadf;
+  --shadow-lg: 0 24px 80px rgba(0, 0, 0, 0.34);
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --grid-max: 1200px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-surface-soft: var(--surface-soft);
+  --color-foreground: var(--foreground);
+  --color-foreground-soft: var(--foreground-soft);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-mint: var(--mint);
+  --color-mint-strong: var(--mint-strong);
+  --color-mint-soft: var(--mint-soft);
+  --color-orange: var(--orange);
+  --color-orange-strong: var(--orange-strong);
+  --color-orange-soft: var(--orange-soft);
+  --color-cream: var(--cream);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background:
+    radial-gradient(circle at top, rgba(117, 240, 193, 0.12), transparent 28%),
+    radial-gradient(circle at 80% 15%, rgba(255, 154, 87, 0.08), transparent 24%),
+    linear-gradient(180deg, #101214 0%, #111315 40%, #15191c 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(117, 240, 193, 0.28);
+  color: var(--cream);
+}
+
+.container-shell {
+  width: min(calc(100% - 2rem), var(--grid-max));
+  margin: 0 auto;
+}
+
+.section-pad {
+  padding: 5rem 0;
+}
+
+.panel {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(28, 33, 37, 0.92), rgba(17, 19, 21, 0.92));
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(14px);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--border-strong);
+  background: rgba(117, 240, 193, 0.08);
+  color: var(--mint-strong);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
