@@ -52,7 +52,7 @@ export default function StarterKitPage() {
               <div>
                 <h2 className="text-3xl font-semibold tracking-tight text-cream">Get the Starter Kit</h2>
                 <p className="mt-3 text-base leading-7 text-foreground-soft">
-                  Tell us where to send it, and we’ll move you straight into the worksheet bundle and the next best resource for your stage.
+                  Tell us where to send it, and we&apos;ll take you straight to the workbook so you can make a smart first AI decision today.
                 </p>
               </div>
             </div>
@@ -76,13 +76,12 @@ export default function StarterKitPage() {
         <section className="panel rounded-[var(--radius-xl)] px-6 py-8 md:px-10 md:py-12">
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="space-y-4">
-              <span className="eyebrow">What happens after the opt-in</span>
+              <span className="eyebrow">Your next step</span>
               <h2 className="text-balance text-3xl font-semibold tracking-tight text-cream md:text-5xl">
-                The worksheet gets the role chosen. The guide gets the employee built.
+                The Starter Kit gives you clarity. The Guide helps you put AI to work.
               </h2>
               <p className="max-w-2xl text-lg leading-8 text-foreground-soft">
-                Once someone sees the opportunity clearly, the next logical move is the guide page: role design, stack,
-                brain, guardrails, training, performance management, and rollout.
+                Once you know the right role, the next move is simple: use the Guide to build it with the right structure, guardrails, training, and review process.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
@@ -90,13 +89,13 @@ export default function StarterKitPage() {
                 href="/thank-you"
                 className="inline-flex items-center justify-center rounded-full bg-orange px-6 py-3 font-medium text-slate-950 transition hover:bg-orange-strong"
               >
-                See the download page
+                Preview the download page
               </Link>
               <Link
                 href="/guide"
                 className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 font-medium text-cream transition hover:border-mint/40 hover:bg-white/3"
               >
-                See the full guide sales page
+                See the Guide
               </Link>
             </div>
           </div>

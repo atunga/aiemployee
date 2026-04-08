@@ -13,12 +13,12 @@ export default function Home() {
       <EmailForm />
       <PricingCards />
       <CtaBlock
-        eyebrow="Now the full ladder exists"
-        title="Choose the path that matches how ready the buyer actually is."
-        description="The homepage now routes clearly to the free Starter Kit, the paid Guide, and the recurring AI Employee Lab membership so visitors can self-select without friction."
+        eyebrow="Choose your next win"
+        title="Start where you are, and get the result that matters next."
+        description="Use the free Starter Kit to choose the right first AI role, the Guide to build it properly, or Lab to keep improving once AI is already carrying meaningful work."
         primaryLabel="Explore AI Employee Lab"
         primaryHref="/lab"
-        secondaryLabel="See the Guide sales page"
+        secondaryLabel="See the Guide"
         secondaryHref="/guide"
       />
       <FaqAccordion />

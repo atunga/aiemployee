@@ -48,7 +48,7 @@ export default function LabPage() {
           <aside className="panel rounded-[var(--radius-xl)] p-6 md:p-8 lg:sticky lg:top-24">
             <div className="space-y-4">
               <p className="text-sm uppercase tracking-[0.18em] text-mint-strong">Best fit</p>
-              <h2 className="text-3xl font-semibold tracking-tight text-cream">For operators who want momentum after the first build.</h2>
+              <h2 className="text-3xl font-semibold tracking-tight text-cream">For operators who want AI performance to keep improving, not stall out after launch.</h2>
               <ul className="space-y-3 text-base leading-7 text-foreground-soft">
                 {labPage.audience.map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -109,15 +109,15 @@ export default function LabPage() {
                 className={`w-full inline-flex items-center justify-center rounded-full px-5 py-3 font-medium transition ${plan.featured ? "bg-orange text-slate-950 hover:bg-orange-strong" : "border border-border text-cream hover:border-mint/40 hover:bg-white/3"}`}
               />
               <p className="mt-4 text-xs leading-6 text-muted">
-                Checkout opens a secure payment flow when live pricing is configured.
+                Secure checkout opens as soon as live pricing is configured.
               </p>
             </article>
           ))}
         </section>
 
         <section className="panel rounded-[var(--radius-xl)] border border-mint/20 p-6 md:p-8">
-          <span className="eyebrow">Launch notes</span>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Membership delivery should move cleanly from payment into access and onboarding.</h2>
+          <span className="eyebrow">What to expect</span>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Join once, then keep getting practical ways to improve how AI works inside your business.</h2>
           <ul className="mt-6 space-y-3 text-base leading-7 text-foreground-soft">
             {labPage.wiringNotes.map((note) => (
               <li key={note} className="flex items-start gap-3">
@@ -129,12 +129,12 @@ export default function LabPage() {
         </section>
 
         <CtaBlock
-          eyebrow="Prefer the lower-risk path?"
-          title="Start with the Guide if you still need to build the first employee."
-          description="Lab is strongest after someone already believes in the model and wants ongoing implementation leverage. If they are not there yet, send them to the Guide first."
+          eyebrow="Not there yet?"
+          title="Start with the Guide if you still need to build your first dependable AI employee."
+          description="Lab is strongest once AI is already doing meaningful work for you. If you are still building the first version, the Guide is the smarter next step."
           primaryLabel="See the Guide"
           primaryHref="/guide"
-          secondaryLabel="Grab the free Starter Kit"
+          secondaryLabel="Get the free Starter Kit"
           secondaryHref="/starter-kit"
         />
 

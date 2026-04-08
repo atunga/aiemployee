@@ -8,11 +8,10 @@ export function FeatureGrid() {
         <div className="max-w-3xl space-y-4">
           <span className="eyebrow">Choose your path</span>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-cream md:text-5xl">
-            One homepage. Three clear next moves.
+            Start with the outcome you want most.
           </h2>
           <p className="text-lg leading-8 text-foreground-soft">
-            Cold traffic should not have to guess. The free offer builds trust, the paid guide builds the first employee,
-            and Lab keeps serious operators moving.
+            Whether you need clarity, a working system, or ongoing support, each offer is built to solve the next real problem in front of you.
           </p>
         </div>
 

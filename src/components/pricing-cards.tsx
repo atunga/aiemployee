@@ -7,12 +7,12 @@ export function PricingCards() {
     <section id="guide" className="section-pad py-10">
       <div className="container-shell space-y-8">
         <div className="max-w-3xl space-y-4">
-          <span className="eyebrow">Offer ladder</span>
+          <span className="eyebrow">Ways to get started</span>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-cream md:text-5xl">
-            Match the offer to the buyer’s level of commitment.
+            Choose the level of help that matches your next move.
           </h2>
           <p className="text-lg leading-8 text-foreground-soft">
-            Free for clarity. Paid for implementation. Membership for ongoing leverage. The structure is simple on purpose.
+            Start free if you need clarity. Buy the Guide if you are ready to build. Choose the bundle if you want the fastest path to traction.
           </p>
         </div>
 

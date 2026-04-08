@@ -33,24 +33,24 @@ export const navLinks = [
 
 export const features = [
   {
-    title: "Clear offer ladder",
+    title: "Pick the right first AI hire",
     description:
-      "The homepage routes cold traffic to the free Starter Kit, warm buyers to the Guide, and serious operators to Lab membership.",
+      "Get clear on which role will save the most time, reduce the most drag, and create visible wins fastest.",
   },
   {
-    title: "Built for operators",
+    title: "Turn AI into accountable output",
     description:
-      "Practical systems, clear handoffs, and execution-first workflows instead of vague AI inspiration.",
+      "Learn how to give AI a real job, clear boundaries, and reviewable work instead of one-off prompts.",
   },
   {
-    title: "Premium trust signals",
+    title: "Build with operator confidence",
     description:
-      "Dark surfaces, restrained accents, and crisp hierarchy give the brand a credible operator-grade feel.",
+      "Everything is designed for founders and operators who care about speed, trust, and practical ROI.",
   },
   {
-    title: "Reusable page blocks",
+    title: "Keep improving without starting over",
     description:
-      "Shared sections keep the funnel consistent from first visit through checkout and onboarding.",
+      "Move from first deployment to ongoing upgrades with resources that compound as your AI team grows.",
   },
 ];
 
@@ -58,100 +58,100 @@ export const pricingTiers: PricingTier[] = [
   {
     name: "Starter Kit",
     price: "Free",
-    description: "Start with the worksheet bundle that helps you pick the right first AI role fast.",
-    badge: "Lead capture",
+    description: "Get fast clarity on the best first AI role for your business before you spend money or lose time.",
+    badge: "Best first step",
     ctaLabel: "Get the Starter Kit",
     ctaHref: "/starter-kit",
-    features: ["8-page workbook", "30-minute clarity sprint", "Warmup into the paid guide"],
+    features: ["8-page workbook", "30-minute clarity sprint", "Role scorecard + guardrails"],
   },
   {
     name: "Guide",
     price: "$29",
-    description: "Get the core operating playbook for hiring, training, and managing the first AI employee.",
-    badge: "Core offer",
-    ctaLabel: "Buy the guide",
+    description: "Get the practical playbook for turning AI into a dependable teammate inside real workflows.",
+    badge: "Most popular",
+    ctaLabel: "Get the guide",
     ctaHref: "/guide#pricing",
     offerKey: "guide",
-    features: ["12 practical chapters", "Role design + guardrails", "30-day rollout plan", "Immediate Lab upsell bridge"],
+    features: ["12 practical chapters", "Role design + guardrails", "30-day rollout plan", "Templates you can use immediately"],
     featured: true,
   },
   {
     name: "Guide + Toolkit + Lab",
     price: "$79",
-    description: "Bundle the guide, worksheet assets, and the first month of Lab in a single checkout.",
-    badge: "Highest LTV path",
-    ctaLabel: "Buy the bundle",
+    description: "Get the guide, supporting assets, and your first month of Lab for the fastest path to results.",
+    badge: "Fastest path",
+    ctaLabel: "Get the bundle",
     ctaHref: "/guide#pricing",
     offerKey: "guide_lab_bundle",
-    features: ["Guide PDF", "Starter Kit assets", "First month of Lab", "Fastest path to implementation"],
+    features: ["Guide PDF", "Starter Kit assets", "First month of Lab", "Best option for immediate momentum"],
   },
 ];
 
 export const faqs = [
   {
-    question: "Who is this built for?",
+    question: "Who is this for?",
     answer:
-      "Founders, operators, consultants, and ambitious professionals who want AI to own real work instead of just generating one-off outputs.",
+      "Founders, operators, consultants, and ambitious professionals who want AI to take on real work, not just generate occasional output.",
   },
   {
-    question: "How should someone move through the funnel?",
+    question: "Where should I start?",
     answer:
-      "Most people should start with the Starter Kit, use the guide to build the first employee, then join Lab if they want ongoing support, updates, and new implementation assets.",
+      "If you are still deciding what AI should own first, start with the Starter Kit. If you already know you want to build a working AI role, get the Guide. If you want ongoing support and fresh implementation assets, join Lab.",
   },
   {
     question: "Do I need to be technical?",
     answer:
-      "No. The offers are framed for operators, not engineers. The focus is role design, workflows, guardrails, training, and practical deployment.",
+      "No. This is built for operators, not engineers. The focus is role design, workflows, guardrails, training, and practical deployment.",
   },
   {
     question: "How do payments and delivery work?",
     answer:
-      "Lead capture, checkout, and post-purchase delivery are set up for a clean customer journey. Stripe pricing and fulfillment routing are controlled through environment configuration before launch.",
+      "The free Starter Kit is delivered after signup, and paid offers use secure Stripe checkout with clear post-purchase access steps.",
   },
 ];
 
 export const homepageRoutes = [
   {
-    eyebrow: "Start here",
+    eyebrow: "Start with clarity",
     title: "Starter Kit",
     description:
-      "For cold traffic and curious operators who need to choose the right first AI employee before they buy anything.",
+      "Choose the best first AI role, define the job, and avoid wasting time on the wrong use case.",
     href: "/starter-kit",
     cta: "Get the free Starter Kit",
   },
   {
-    eyebrow: "Build it",
+    eyebrow: "Build the system",
     title: "Guide",
     description:
-      "For buyers ready to design the role, choose the stack, write the brain, add guardrails, and run the first 30 days correctly.",
+      "Learn how to design the role, set guardrails, train the employee, and make AI useful inside day-to-day operations.",
     href: "/guide",
     cta: "See the guide",
   },
   {
-    eyebrow: "Keep shipping",
+    eyebrow: "Keep the edge",
     title: "AI Employee Lab",
     description:
-      "For operators who want ongoing updates, new role packs, implementation support, and a reason to keep improving every month.",
+      "Stay current with practical updates, new role packs, and support that helps your AI team keep getting better.",
     href: "/lab",
-    cta: "Explore Lab membership",
+    cta: "Explore Lab",
   },
 ];
 
 export const starterKitPage = {
-  eyebrow: "Free worksheet bundle",
-  title: "Choose your first AI employee before you waste another month poking at tools.",
+  eyebrow: "Free Starter Kit",
+  title: "Choose the right first AI employee, before you waste time on the wrong one.",
   description:
-    "The First AI Employee Starter Kit helps you pick the right role, define the job, list the first tasks, and set guardrails in under 30 minutes.",
+    "This worksheet bundle helps you identify the best first AI role, define what success looks like, and map the work it should take off your plate in under 30 minutes.",
   bullets: [
-    "Choose the best first AI role with a simple scorecard",
-    "Define the job clearly before you build anything",
-    "Map the first 10 tasks to delegate",
-    "Set guardrails that protect trust from day one",
+    "Pick the best first AI role with a simple scorecard",
+    "Define the job clearly before you touch another tool",
+    "Map the first tasks you want AI to own",
+    "Set guardrails that protect quality and trust from day one",
   ],
   socialProof: [
     "Built for founders, operators, consultants, and ambitious professionals",
-    "Practical, anti-hype framing from the rAIzor Crest operating model",
-    "Fast value now, smooth handoff into the full guide later",
+    "Practical, anti-hype guidance rooted in real operating leverage",
+    "Fast to use, easy to act on, and built to create immediate clarity",
   ],
   formFields: [
     { label: "First name", type: "text", placeholder: "Ted" },
@@ -161,85 +161,85 @@ export const starterKitPage = {
   takeaways: [
     {
       title: "Choose the right first role",
-      description: "Use a simple scorecard to avoid picking a flashy but fragile first AI employee.",
+      description: "Focus on the AI employee most likely to create quick wins and earn trust with your team.",
     },
     {
-      title: "Write the job before the prompt",
-      description: "Get role clarity, mission, responsibilities, and non-responsibilities locked in first.",
+      title: "Get role clarity fast",
+      description: "Lock in the mission, responsibilities, and limits before you build anything fragile.",
     },
     {
-      title: "Plan the first 10 tasks",
-      description: "Turn abstract AI interest into concrete work that can be assigned and reviewed.",
+      title: "Turn interest into action",
+      description: "Translate vague AI ambition into specific tasks you can assign, review, and improve.",
     },
     {
-      title: "Build the fence",
-      description: "Set action, access, communication, and escalation guardrails before deployment.",
+      title: "Protect quality from day one",
+      description: "Set the boundaries that keep AI helpful, on-brand, and safe to use inside real work.",
     },
   ],
 };
 
 export const thankYouPage = {
-  eyebrow: "You’re in",
-  title: "Starter Kit requested. Next move: don’t lose momentum.",
+  eyebrow: "Starter Kit unlocked",
+  title: "Your Starter Kit is ready. Now turn that clarity into momentum.",
   description:
-    "Your worksheet bundle is ready below. Use it to choose the role, then move into the full guide when you're ready to build the system behind it.",
+    "Download the workbook, choose the best first role, and use the Guide when you are ready to build an AI employee that can carry real work.",
   checklist: [
-    "Download the Starter Kit below and save it somewhere your team can access",
+    "Download the Starter Kit and save it somewhere easy to revisit",
     "Block 30 minutes to complete the role scorecard and guardrails pages",
-    "Use the guide page when you are ready to move from planning into implementation",
+    "Move to the Guide when you are ready to build the role for real",
   ],
   bridgeCards: [
     {
       title: "Start with the workbook",
-      description: "Pick the right first role, define the job, and decide what AI should and should not own.",
+      description: "Choose the right first role, define the job, and get clear on what AI should and should not own.",
     },
     {
-      title: "Then get the operating playbook",
-      description: "Learn the role design, stack, training, review, and rollout process that turns AI into leverage.",
+      title: "Then build the employee",
+      description: "Use the Guide to turn that plan into a working system with training, guardrails, and review built in.",
     },
   ],
 };
 
 export const guidePage = {
   hero: {
-    eyebrow: "Core paid offer",
+    eyebrow: "Build your first AI employee",
     title: "Build Your First AI Employee",
-    subtitle: "A practical guide to hiring, training, and managing AI agents that actually work.",
+    subtitle: "A practical guide to putting AI to work where it actually matters.",
     description:
-      "Stop thinking like a user. Start thinking like a manager. This guide shows you how to design the role, choose the stack, write the brain, set guardrails, train the employee, and manage performance without hype.",
+      "If you want AI to save time, reduce drag, and own repeatable work, this guide shows you how to do it right. You will learn how to design the role, set the boundaries, train the employee, and manage performance without getting lost in hype.",
   },
   outcomes: [
-    "Choose a role that creates fast, reviewable value",
-    "Write job descriptions and system instructions that actually hold up",
-    "Create guardrails that protect trust without killing leverage",
+    "Choose a role that creates fast, visible value",
+    "Write job descriptions and instructions that hold up in real use",
+    "Set guardrails that protect trust without slowing everything down",
     "Train the employee with examples, templates, and feedback loops",
     "Run a 30-day rollout with clear performance reviews",
   ],
   chapterGroups: [
     {
-      title: "Part 1, Design the employee",
+      title: "Part 1, Choose the right role",
       items: [
-        "Stop thinking tool, start thinking role",
-        "What makes a strong first AI employee",
-        "Pick the right job before you pick the stack",
+        "Think in jobs and outcomes, not tools and trends",
+        "Spot what makes a strong first AI employee",
+        "Choose the right role before you choose the stack",
         "Write a job description with boundaries and success metrics",
       ],
     },
     {
-      title: "Part 2, Build the system",
+      title: "Part 2, Build a dependable system",
       items: [
-        "Choose a minimal stack that supports the role",
-        "Write the brain: identity, mission, responsibilities, boundaries",
+        "Choose a lean stack that supports the work",
+        "Define the employee's identity, mission, responsibilities, and limits",
         "Set guardrails for action, access, communication, and escalation",
         "Train the employee with examples and revision loops",
       ],
     },
     {
-      title: "Part 3, Run it like an operator",
+      title: "Part 3, Make it part of the business",
       items: [
-        "Assign the first recurring tasks and build a real backlog",
+        "Assign the first recurring tasks and create a usable backlog",
         "Manage performance with scorecards and review rhythm",
-        "Avoid the common failure modes that kill trust",
+        "Avoid the failure patterns that kill trust early",
         "Follow the first 30-day rollout plan",
       ],
     },
@@ -247,79 +247,79 @@ export const guidePage = {
   credibilityStats: [
     { label: "Guide length", value: "12 chapters" },
     { label: "Practical assets", value: "4 appendices" },
-    { label: "Primary promise", value: "Leverage over hype" },
+    { label: "What you get", value: "Clarity + execution" },
   ],
   objections: [
     {
-      title: "This is not a prompt dump.",
-      description: "It is an operating manual for turning AI from interesting output into repeatable, reviewable work.",
+      title: "This is not a pile of prompts.",
+      description: "It is a practical operating manual for turning AI into consistent, reviewable work inside your business.",
     },
     {
-      title: "This is not built for enterprise theater.",
-      description: "It is built for founders and operators who want ROI, cleaner workflows, and fast implementation.",
+      title: "This is not strategy theater.",
+      description: "It is built for founders and operators who want cleaner workflows, faster execution, and measurable ROI.",
     },
     {
-      title: "This is not technical for the sake of sounding smart.",
-      description: "It stays practical: role, stack, guardrails, training, task design, review, and scale.",
+      title: "This is not technical just to sound smart.",
+      description: "Everything stays grounded in role design, guardrails, training, task design, review, and scale.",
     },
   ],
   checkoutNote:
-    "Checkout is configured through Stripe price IDs and fulfillment routes, so the buying flow can move cleanly from payment into delivery and onboarding.",
+    "Choose the version that matches how much support and momentum you want right now, then move from purchase into access without friction.",
 };
 
 export const labPage = {
   hero: {
-    eyebrow: "Recurring membership",
+    eyebrow: "Ongoing support",
     title: "AI Employee Lab",
-    subtitle: "Ongoing support for operators building AI employees that actually work.",
+    subtitle: "Stay sharp, ship faster, and keep your AI team improving month after month.",
     description:
-      "The guide gets your first AI employee live. Lab helps you keep improving the system with monthly workflow updates, new role packs, implementation help, operator Q&A, and a clear read on what changed this month.",
+      "The Guide helps you launch your first AI employee. Lab helps you keep improving with practical updates, new role packs, implementation support, and a clearer read on what is worth acting on next.",
   },
   outcomes: [
-    "Monthly workflow updates you can actually apply",
-    "New AI employee role packs to speed up deployment",
-    "Implementation help when your build gets messy",
+    "Monthly updates you can actually apply",
+    "New role packs that speed up your next deployment",
+    "Support when your implementation gets messy",
     "Operator-focused Q&A and community access",
-    "A simple AI brief on what changed this month and why it matters",
+    "A simple monthly brief on what changed and why it matters",
   ],
   pillars: [
     {
       title: "Monthly workflow updates",
-      description: "See what changed in tooling, process, and practical execution without spending your week doom-scrolling AI news.",
+      description: "Know what changed in tooling and execution, without spending your week buried in AI news and random demos.",
     },
     {
       title: "New role packs",
-      description: "Get fresh role ideas, job definitions, task maps, and guardrail thinking for the next employees on your roadmap.",
+      description: "Get fresh role ideas, task maps, and guardrail guidance so your next AI employee is easier to launch.",
     },
     {
       title: "Implementation help",
-      description: "When things break in the real world, you need applied support, not another generic webinar about the future.",
+      description: "When the real world gets messy, get practical support that helps you fix problems and keep moving.",
     },
     {
       title: "Q&A and community",
-      description: "Learn alongside other operators who care about leverage, trust, and shipping useful systems instead of collecting demos.",
+      description: "Learn with other operators who care about leverage, trust, and building useful systems that stick.",
     },
     {
-      title: "What changed this month brief",
-      description: "A concise monthly summary of the AI shifts worth acting on so you know where to upgrade and where to ignore noise.",
+      title: "Monthly signal brief",
+      description: "See the AI shifts worth paying attention to, so you can act on signal and ignore noise.",
     },
     {
-      title: "Founding member positioning",
-      description: "Early members get the strongest value story, closer feedback loops, and front-row influence on what gets built next.",
+      title: "Founding member access",
+      description: "Early members get closer feedback loops, stronger value, and more influence on what gets built next.",
     },
   ],
   audience: [
-    "You already bought the guide and want a practical next step",
-    "You need help turning one employee into a repeatable operating system",
-    "You want ongoing leverage, not one-time inspiration",
+    "You want practical help after launching your first AI employee",
+    "You are turning one useful employee into a repeatable system",
+    "You want ongoing leverage, not another burst of inspiration",
   ],
   plans: [
     {
       name: "Monthly",
       price: "$19/mo",
-      badge: "Low-friction entry",
-      description: "Best for operators who want current updates and implementation momentum without a bigger upfront commitment.",
-      features: ["Everything in Lab", "Month-to-month access", "Easy first step after the guide"],
+      badge: "Easy entry",
+      description: "Best if you want current updates and steady support without a big upfront commitment.",
+      features: ["Everything in Lab", "Month-to-month access", "A simple next step after the Guide"],
       ctaLabel: "Join monthly",
       offerKey: "lab_monthly",
     },
@@ -327,16 +327,16 @@ export const labPage = {
       name: "Annual",
       price: "$190/yr",
       badge: "Best value",
-      description: "Best for serious builders who know AI operations will stay on the roadmap all year.",
-      features: ["2 months free vs monthly", "Priority founding member framing", "Best for long-term implementation rhythm"],
+      description: "Best if AI operations will stay on your roadmap all year and you want the strongest value.",
+      features: ["2 months free vs monthly", "Priority founding member positioning", "Best for long-term momentum"],
       ctaLabel: "Join annual",
       offerKey: "lab_annual",
       featured: true,
     },
   ] as LabPlan[],
   wiringNotes: [
-    "Stripe monthly and annual price IDs control live checkout for each membership tier.",
-    "Provisioning should hand off into your member system, such as Circle, Skool, Discord, or Kajabi.",
-    "Add analytics for page views, checkout starts, and paid conversions before paid traffic goes live.",
+    "Secure Stripe checkout powers monthly and annual membership purchase.",
+    "Membership access should hand off cleanly into your community or learning platform.",
+    "Tracking key conversion points helps you improve the buying experience over time.",
   ],
 };

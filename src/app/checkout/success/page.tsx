@@ -27,7 +27,7 @@ export default async function CheckoutSuccessPage({
 
         <section className="grid gap-5 lg:grid-cols-[1fr_0.9fr]">
           <article className="panel rounded-[var(--radius-xl)] p-6 md:p-8">
-            <span className="eyebrow">Delivery</span>
+            <span className="eyebrow">Your access</span>
             <div className="mt-5 space-y-4">
               {offer.deliveryAssets.length ? (
                 offer.deliveryAssets.map((asset) => (
@@ -36,25 +36,25 @@ export default async function CheckoutSuccessPage({
                   </a>
                 ))
               ) : (
-                <p className="leading-7 text-foreground-soft">Your purchase now moves into onboarding and access setup. You’ll receive the next steps by email as the provisioning flow is finalized.</p>
+                <p className="leading-7 text-foreground-soft">Your purchase now moves into access setup and onboarding. You&apos;ll receive the next steps by email as soon as everything is ready.</p>
               )}
             </div>
           </article>
 
           <aside className="panel rounded-[var(--radius-xl)] border border-orange/30 p-6 md:p-8">
             <span className="eyebrow">Best next step</span>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">{offer.handoffTarget === "lab" ? "Watch for onboarding details." : "Keep momentum with the next offer."}</h2>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">{offer.handoffTarget === "lab" ? "Watch for onboarding details." : "Keep the momentum going."}</h2>
             <p className="mt-4 leading-7 text-foreground-soft">
               {offer.handoffTarget === "lab"
-                ? "This purchase should hand off into onboarding, access setup, and the right follow-up sequence for new members."
-                : "Keep the buyer moving with the next logical CTA in the ladder."}
+                ? "We&apos;ll guide you into access and help you make the most of what you just bought."
+                : "If you want more support after this purchase, the next best option is ready when you are."}
             </p>
             <div className="mt-6 flex flex-col gap-3">
               <Link href="/lab" className="inline-flex items-center justify-center rounded-full bg-orange px-6 py-3 font-medium text-slate-950 transition hover:bg-orange-strong">
                 Go to AI Employee Lab
               </Link>
               <Link href="/guide" className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 font-medium text-cream transition hover:border-mint/40 hover:bg-white/3">
-                Back to the Guide offer
+                Back to the Guide
               </Link>
             </div>
           </aside>

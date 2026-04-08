@@ -35,7 +35,7 @@ export function Navbar() {
               href="/starter-kit"
               className="inline-flex items-center gap-2 rounded-full border border-orange/40 bg-orange-soft px-4 py-2 text-sm font-medium text-cream transition hover:border-orange hover:bg-orange/20"
             >
-              Get the Starter Kit
+              Get the free Starter Kit
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -69,7 +69,7 @@ export function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-orange px-5 py-3 font-medium text-slate-950 transition hover:bg-orange-strong"
               >
-                Get the Starter Kit
+                Get the free Starter Kit
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </nav>

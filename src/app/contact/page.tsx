@@ -12,9 +12,9 @@ export default function ContactPage() {
       <div className="container-shell max-w-4xl space-y-8">
         <section className="panel rounded-[var(--radius-xl)] p-8 md:p-10">
           <span className="eyebrow">Contact</span>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-cream md:text-6xl">Questions about delivery, billing, or the right offer?</h1>
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-cream md:text-6xl">Questions about access, billing, or where to start?</h1>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-foreground-soft">
-            Reach out and we’ll help with support requests, purchase questions, and membership access.
+            Reach out if you need help choosing the right offer, finding your purchase, or getting the right next step for your stage.
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             <div className="rounded-[var(--radius-lg)] border border-border bg-background-alt/80 p-6">

@@ -56,7 +56,7 @@ export default async function ThankYouPage({
                   </a>
                 ))}
               </div>
-              {params.email ? <p className="mt-4 text-sm text-muted">We’ll also send follow-up resources to {params.email}.</p> : null}
+              {params.email ? <p className="mt-4 text-sm text-muted">We&apos;ll also send follow-up resources to {params.email}.</p> : null}
             </article>
             {thankYouPage.bridgeCards.map((card) => (
               <article key={card.title} className="panel rounded-[var(--radius-lg)] p-6 md:p-8">
@@ -73,11 +73,10 @@ export default async function ThankYouPage({
             <div className="space-y-4">
               <span className="eyebrow">Best next step</span>
               <h2 className="text-balance text-3xl font-semibold tracking-tight text-cream md:text-5xl">
-                Go straight to the guide if you want the full operating system.
+                Go to the Guide when you are ready to turn clarity into a working AI employee.
               </h2>
               <p className="text-lg leading-8 text-foreground-soft">
-                The Starter Kit gives clarity. The guide gives the framework for role design, stack choices, system instructions,
-                guardrails, training loops, task backlogs, performance review, and the first 30 days.
+                The Starter Kit helps you choose the role. The Guide shows you how to build it so AI can take on real recurring work with more consistency and less friction.
               </p>
             </div>
             <div className="mt-8 flex flex-col gap-3">
@@ -85,14 +84,14 @@ export default async function ThankYouPage({
                 href="/guide"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-orange px-6 py-3 font-medium text-slate-950 transition hover:bg-orange-strong"
               >
-                See the guide offer
+                See the Guide
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/starter-kit"
                 className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 font-medium text-cream transition hover:border-mint/40 hover:bg-white/3"
               >
-                Back to Starter Kit page
+                Back to Starter Kit
               </Link>
             </div>
           </aside>

@@ -55,9 +55,9 @@ export default function GuidePage() {
               ))}
             </div>
             <div className="mt-6 rounded-[var(--radius-lg)] border border-mint/20 bg-mint-soft/40 p-5">
-              <p className="text-sm uppercase tracking-[0.18em] text-mint-strong">Core promise</p>
+              <p className="text-sm uppercase tracking-[0.18em] text-mint-strong">Why it matters</p>
               <p className="mt-3 leading-7 text-foreground-soft">
-                This is for people who want AI to own clear, repeatable work inside real workflows, not people collecting shiny tools and calling it strategy.
+                The goal is simple: help you turn AI into useful, accountable work that saves time, reduces friction, and actually earns trust.
               </p>
             </div>
           </aside>
@@ -104,15 +104,15 @@ export default function GuidePage() {
 
         <section className="panel rounded-[var(--radius-xl)] border border-orange/20 p-6 md:p-8">
           <span className="eyebrow">Simple purchase path</span>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Choose the guide option that matches how fast you want to move.</h2>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Choose the option that matches how quickly you want results.</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-foreground-soft">{guidePage.checkoutNote}</p>
         </section>
 
         <CtaBlock
-          eyebrow="Why buy now"
-          title="You can keep experimenting with tools, or you can finally build an employee that owns work."
-          description="The guide is the bridge from AI curiosity to operator-grade execution. Buy the guide, use the templates, deploy the first role, and then move into Lab for ongoing support."
-          primaryLabel="Buy the guide"
+          eyebrow="Ready to stop experimenting?"
+          title="Build the AI employee that makes your business feel lighter, faster, and more consistent."
+          description="Use the Guide to move from scattered AI use to a role that can own real work, with the structure and guardrails to make it reliable."
+          primaryLabel="Get the guide"
           primaryHref="#pricing"
           secondaryLabel="See AI Employee Lab"
           secondaryHref="/lab"

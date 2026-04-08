@@ -13,10 +13,10 @@ export function FaqAccordion() {
         <div className="space-y-4">
           <span className="eyebrow">FAQ</span>
           <h2 className="text-balance text-3xl font-semibold tracking-tight text-cream md:text-5xl">
-            Common questions, handled without clutter.
+            Questions smart buyers ask before they commit.
           </h2>
           <p className="text-lg leading-8 text-foreground-soft">
-            A simple accordion keeps future funnel pages tidy while still answering the objections that matter.
+            Clear answers, no fluff, so you can decide what fits your stage and move with confidence.
           </p>
         </div>
 
