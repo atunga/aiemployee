@@ -15,7 +15,7 @@ export function HeroSection() {
               Stop dabbling with tools. Start building AI employees that own real work.
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-foreground-soft md:text-xl">
-              AI Employee gives operators a clean path: use the Starter Kit to choose the right role, use the Guide to
+              rAIzor Crest gives operators a clean path: use the Starter Kit to choose the right role, use the Guide to
               build the first employee, then use AI Employee Lab to keep the system sharp every month.
             </p>
           </div>

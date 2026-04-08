@@ -8,9 +8,9 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Employee | AI Employee Funnel",
+  title: "rAIzor Crest | AI Employee Funnel",
   description:
-    "Dedicated marketing site scaffold for the AI Employee Starter Kit, guide, and AI Employee Lab funnel.",
+    "Dedicated marketing site scaffold for the rAIzor Crest Starter Kit, guide, and AI Employee Lab funnel.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

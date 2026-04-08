@@ -1,3 +1,28 @@
+import type { OfferKey } from "@/lib/offers";
+
+type PricingTier = {
+  name: string;
+  price: string;
+  description: string;
+  badge: string;
+  ctaLabel: string;
+  ctaHref: string;
+  features: string[];
+  featured?: boolean;
+  offerKey?: OfferKey;
+};
+
+type LabPlan = {
+  name: string;
+  price: string;
+  badge: string;
+  description: string;
+  features: string[];
+  ctaLabel: string;
+  offerKey: OfferKey;
+  featured?: boolean;
+};
+
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Starter Kit", href: "/starter-kit" },
@@ -29,7 +54,7 @@ export const features = [
   },
 ];
 
-export const pricingTiers = [
+export const pricingTiers: PricingTier[] = [
   {
     name: "Starter Kit",
     price: "Free",
@@ -41,22 +66,24 @@ export const pricingTiers = [
   },
   {
     name: "Guide",
-    price: "$49",
-    description: "Get the full operating playbook for hiring, training, and managing AI employees that work.",
+    price: "$29",
+    description: "Get the core operating playbook for hiring, training, and managing the first AI employee.",
     badge: "Core offer",
     ctaLabel: "Buy the guide",
     ctaHref: "/guide#pricing",
-    features: ["12 practical chapters", "Templates + scorecards", "30-day rollout plan", "Immediate next-step CTA"],
+    offerKey: "guide",
+    features: ["12 practical chapters", "Role design + guardrails", "30-day rollout plan", "Immediate Lab upsell bridge"],
     featured: true,
   },
   {
-    name: "AI Employee Lab",
-    price: "$19/mo",
-    description: "Stay current with monthly implementation guidance, fresh role packs, and operator-focused support.",
-    badge: "Recurring membership",
-    ctaLabel: "Join Lab",
-    ctaHref: "/lab#join",
-    features: ["Monthly workflow updates", "New role packs", "Operator Q&A + community", "What changed this month brief"],
+    name: "Guide + Toolkit + Lab",
+    price: "$79",
+    description: "Bundle the guide, worksheet assets, and the first month of Lab in a single checkout.",
+    badge: "Highest LTV path",
+    ctaLabel: "Buy the bundle",
+    ctaHref: "/guide#pricing",
+    offerKey: "guide_lab_bundle",
+    features: ["Guide PDF", "Starter Kit assets", "First month of Lab", "Fastest path to implementation"],
   },
 ];
 
@@ -79,7 +106,7 @@ export const faqs = [
   {
     question: "Are the forms and payments connected yet?",
     answer:
-      "Not yet. The current forms, checkout buttons, and billing toggles are deliberate UI placeholders with implementation notes so real ESP, checkout, and membership wiring can be added cleanly later.",
+      "Yes. Lead capture, checkout routing, delivery links, and post-purchase handoff are wired. Stripe price IDs and automation webhooks can be dropped in via environment variables for production.",
   },
 ];
 
@@ -123,7 +150,7 @@ export const starterKitPage = {
   ],
   socialProof: [
     "Built for founders, operators, consultants, and ambitious professionals",
-    "Practical, anti-hype framing from the AI Employee operating model",
+    "Practical, anti-hype framing from the rAIzor Crest operating model",
     "Fast value now, smooth handoff into the full guide later",
   ],
   formFields: [
@@ -237,7 +264,7 @@ export const guidePage = {
     },
   ],
   checkoutNote:
-    "Checkout is intentionally not connected in this scaffold yet. Replace the button target with your Stripe Checkout, Lemon Squeezy, ThriveCart, or equivalent and route successful purchases into the Lab upsell.",
+    "The guide CTA now posts into a checkout route. In production, add Stripe price IDs and webhook secrets. In local or unconfigured environments, the mock flow still verifies redirect, delivery, and Lab handoff.",
 };
 
 export const labPage = {
@@ -294,6 +321,7 @@ export const labPage = {
       description: "Best for operators who want current updates and implementation momentum without a bigger upfront commitment.",
       features: ["Everything in Lab", "Month-to-month access", "Easy first step after the guide"],
       ctaLabel: "Join monthly",
+      offerKey: "lab_monthly",
     },
     {
       name: "Annual",
@@ -302,12 +330,13 @@ export const labPage = {
       description: "Best for serious builders who know AI operations will stay on the roadmap all year.",
       features: ["2 months free vs monthly", "Priority founding member framing", "Best for long-term implementation rhythm"],
       ctaLabel: "Join annual",
+      offerKey: "lab_annual",
       featured: true,
     },
-  ],
+  ] as LabPlan[],
   wiringNotes: [
-    "Replace the membership buttons with your real checkout URLs or portal links.",
-    "Connect success states to access provisioning for Circle, Skool, Discord, Kajabi, or your chosen member system.",
+    "Set Stripe monthly and annual price IDs to switch from mock checkout to production checkout.",
+    "Connect the automation webhook to Circle, Skool, Discord, Kajabi, or your chosen member system for provisioning.",
     "Add event tracking for view_lab, click_join_monthly, and click_join_annual before launch.",
   ],
 };

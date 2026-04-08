@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CheckoutButton } from "@/components/checkout-button";
 import { pricingTiers } from "@/lib/site-content";
 
 export function PricingCards() {
@@ -37,12 +38,21 @@ export function PricingCards() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href={tier.ctaHref}
-                className={`mt-7 inline-flex items-center justify-center rounded-full px-5 py-3 font-medium transition ${tier.featured ? "bg-orange text-slate-950 hover:bg-orange-strong" : "border border-border text-cream hover:border-mint/40 hover:bg-white/3"}`}
-              >
-                {tier.ctaLabel}
-              </Link>
+              {tier.offerKey ? (
+                <CheckoutButton
+                  offerKey={tier.offerKey}
+                  label={tier.ctaLabel}
+                  source="pricing-cards"
+                  className={`w-full inline-flex items-center justify-center rounded-full px-5 py-3 font-medium transition ${tier.featured ? "bg-orange text-slate-950 hover:bg-orange-strong" : "border border-border text-cream hover:border-mint/40 hover:bg-white/3"}`}
+                />
+              ) : (
+                <Link
+                  href={tier.ctaHref}
+                  className={`mt-7 inline-flex items-center justify-center rounded-full px-5 py-3 font-medium transition ${tier.featured ? "bg-orange text-slate-950 hover:bg-orange-strong" : "border border-border text-cream hover:border-mint/40 hover:bg-white/3"}`}
+                >
+                  {tier.ctaLabel}
+                </Link>
+              )}
             </article>
           ))}
         </div>

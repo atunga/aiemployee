@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-border/70 py-8">
       <div className="container-shell flex flex-col gap-4 text-sm text-foreground-soft md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="font-medium text-foreground">AI Employee</p>
+          <p className="font-medium text-foreground">rAIzor Crest</p>
           <p>Operator-grade AI systems for founders, builders, and ambitious teams.</p>
         </div>
         <div className="flex flex-wrap gap-4">

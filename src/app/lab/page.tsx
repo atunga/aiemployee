@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, ShieldCheck } from "lucide-react";
+import { CheckoutButton } from "@/components/checkout-button";
 import { CtaBlock } from "@/components/cta-block";
 import { FaqAccordion } from "@/components/faq-accordion";
 import { labPage } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "AI Employee Lab | AI Employee",
+  title: "AI Employee Lab | rAIzor Crest",
   description: "Membership page for AI Employee Lab: ongoing support for operators building AI employees that actually work.",
 };
 
@@ -101,14 +102,14 @@ export default function LabPage() {
                   </li>
                 ))}
               </ul>
-              <button
-                type="button"
-                className={`mt-7 inline-flex items-center justify-center rounded-full px-5 py-3 font-medium transition ${plan.featured ? "bg-orange text-slate-950 hover:bg-orange-strong" : "border border-border text-cream hover:border-mint/40 hover:bg-white/3"}`}
-              >
-                {plan.ctaLabel}
-              </button>
+              <CheckoutButton
+                offerKey={plan.offerKey}
+                label={plan.ctaLabel}
+                source="lab-page"
+                className={`w-full inline-flex items-center justify-center rounded-full px-5 py-3 font-medium transition ${plan.featured ? "bg-orange text-slate-950 hover:bg-orange-strong" : "border border-border text-cream hover:border-mint/40 hover:bg-white/3"}`}
+              />
               <p className="mt-4 text-xs leading-6 text-muted">
-                Placeholder only. Connect this button to real membership checkout before launch.
+                Ready for real Stripe price IDs. Falls back to mock checkout in dev so the full handoff path can still be verified.
               </p>
             </article>
           ))}
@@ -116,7 +117,7 @@ export default function LabPage() {
 
         <section className="panel rounded-[var(--radius-xl)] border border-mint/20 p-6 md:p-8">
           <span className="eyebrow">Implementation notes</span>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Membership and access wiring still needs to be connected.</h2>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Membership checkout is wired and access provisioning can plug into the webhook.</h2>
           <ul className="mt-6 space-y-3 text-base leading-7 text-foreground-soft">
             {labPage.wiringNotes.map((note) => (
               <li key={note} className="flex items-start gap-3">

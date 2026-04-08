@@ -7,7 +7,7 @@ import { PricingCards } from "@/components/pricing-cards";
 import { guidePage } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Guide | AI Employee",
+  title: "Guide | rAIzor Crest",
   description: "Long-form sales page for the Build Your First AI Employee guide.",
 };
 
@@ -103,8 +103,8 @@ export default function GuidePage() {
         </div>
 
         <section className="panel rounded-[var(--radius-xl)] border border-orange/20 p-6 md:p-8">
-          <span className="eyebrow">Checkout wiring placeholder</span>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Payment flow still needs real integration.</h2>
+          <span className="eyebrow">Checkout is wired</span>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-cream">Guide payments can now route through Stripe or mock checkout.</h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-foreground-soft">{guidePage.checkoutNote}</p>
         </section>
 

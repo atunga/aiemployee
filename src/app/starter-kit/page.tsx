@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Mail, ShieldCheck } from "lucide-react";
+import { CheckCircle2, Mail, ShieldCheck } from "lucide-react";
+import { LeadCaptureForm } from "@/components/lead-capture-form";
 import { starterKitPage } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Starter Kit | AI Employee",
+  title: "Starter Kit | rAIzor Crest",
   description: "Free Starter Kit to help operators choose and scope their first AI employee.",
 };
 
@@ -51,33 +52,14 @@ export default function StarterKitPage() {
               <div>
                 <h2 className="text-3xl font-semibold tracking-tight text-cream">Get the Starter Kit</h2>
                 <p className="mt-3 text-base leading-7 text-foreground-soft">
-                  UI only for now. Structured cleanly so ESP wiring can be dropped in later without redesigning the page.
+                  This opt-in is wired for lead capture, asset delivery handoff, and the thank-you bridge into the guide offer.
                 </p>
               </div>
             </div>
 
-            <form className="mt-8 grid gap-4">
-              {starterKitPage.formFields.map((field) => (
-                <label key={field.label} className="grid gap-2 text-sm text-foreground-soft">
-                  {field.label}
-                  <input
-                    type={field.type}
-                    placeholder={field.placeholder}
-                    className="rounded-2xl border border-border bg-background-alt px-4 py-3 text-cream outline-none transition placeholder:text-muted focus:border-mint/50"
-                  />
-                </label>
-              ))}
-              <button
-                type="submit"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-mint px-5 py-3 font-medium text-slate-950 transition hover:bg-mint-strong"
-              >
-                Send me the Starter Kit
-                <ArrowRight className="h-4 w-4" />
-              </button>
-              <p className="text-xs leading-6 text-muted">
-                Placeholder only. Needs ESP/API submit action, asset delivery automation, analytics, and thank-you redirect.
-              </p>
-            </form>
+            <div className="mt-8">
+              <LeadCaptureForm source="starter-kit-page" compact />
+            </div>
           </aside>
         </section>
 

@@ -20,6 +20,10 @@ pnpm-debug.log*
 
 # env files
 .env*
+!.env.example
+
+# app runtime data
+/data/
 
 # typescript
 *.tsbuildinfo

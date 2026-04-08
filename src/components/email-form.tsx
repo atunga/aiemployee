@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LeadCaptureForm } from "@/components/lead-capture-form";
 
 export function EmailForm() {
   return (
@@ -11,57 +12,17 @@ export function EmailForm() {
               Capture the email. Deliver the Starter Kit. Move the buyer journey forward.
             </h2>
             <p className="text-lg leading-8 text-foreground-soft">
-              This is UI-only for now, but the layout is ready for your ESP or API wiring when the funnel goes live.
+              This form is live now. It captures the lead, records delivery metadata, and redirects successful opt-ins to the thank-you bridge.
             </p>
             <div className="rounded-[var(--radius-lg)] border border-border bg-background-alt/80 p-5 text-sm leading-7 text-foreground-soft">
               <p className="font-medium text-cream">Implementation note</p>
               <p className="mt-2">
-                Hook this form to your email platform, trigger asset delivery, then redirect successful submissions to the
-                <Link href="/thank-you" className="ml-1 text-mint transition hover:text-mint-strong">
-                  thank-you bridge page
-                </Link>
-                .
+                Delivery links live on the <Link href="/thank-you" className="text-mint transition hover:text-mint-strong">thank-you bridge page</Link>, and automation tags are ready for an ESP or CRM webhook.
               </p>
             </div>
           </div>
 
-          <form className="panel rounded-[var(--radius-xl)] p-6 md:p-8">
-            <div className="grid gap-4">
-              <label className="grid gap-2 text-sm text-foreground-soft">
-                First name
-                <input
-                  type="text"
-                  placeholder="Ted"
-                  className="rounded-2xl border border-border bg-background-alt px-4 py-3 text-cream outline-none transition placeholder:text-muted focus:border-mint/50"
-                />
-              </label>
-              <label className="grid gap-2 text-sm text-foreground-soft">
-                Work email
-                <input
-                  type="email"
-                  placeholder="you@company.com"
-                  className="rounded-2xl border border-border bg-background-alt px-4 py-3 text-cream outline-none transition placeholder:text-muted focus:border-mint/50"
-                />
-              </label>
-              <label className="grid gap-2 text-sm text-foreground-soft">
-                Biggest ops bottleneck
-                <input
-                  type="text"
-                  placeholder="Repetitive work that keeps stealing hours"
-                  className="rounded-2xl border border-border bg-background-alt px-4 py-3 text-cream outline-none transition placeholder:text-muted focus:border-mint/50"
-                />
-              </label>
-              <button
-                type="submit"
-                className="mt-2 inline-flex items-center justify-center rounded-full bg-mint px-5 py-3 font-medium text-slate-950 transition hover:bg-mint-strong"
-              >
-                Send me the Starter Kit
-              </button>
-              <p className="text-xs leading-6 text-muted">
-                Placeholder only. No backend submit handler, ESP action, analytics event, or redirect is connected yet.
-              </p>
-            </div>
-          </form>
+          <LeadCaptureForm source="homepage" />
         </div>
       </div>
     </section>

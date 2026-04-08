@@ -11,7 +11,7 @@ export function Navbar() {
             <Sparkles className="h-5 w-5" />
           </div>
           <div>
-            <p className="text-sm font-medium uppercase tracking-[0.24em] text-mint-strong">AI Employee</p>
+            <p className="text-sm font-medium uppercase tracking-[0.24em] text-mint-strong">rAIzor Crest</p>
             <p className="text-sm text-foreground-soft">AI leverage for operators</p>
           </div>
         </Link>

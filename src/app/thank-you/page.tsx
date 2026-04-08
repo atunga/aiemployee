@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
+import { offers } from "@/lib/offers";
 import { thankYouPage } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "Thank You | AI Employee",
+  title: "Thank You | rAIzor Crest",
   description: "Thank-you bridge page for Starter Kit signups moving into the full guide.",
 };
 
-export default function ThankYouPage() {
+export default async function ThankYouPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ email?: string; firstName?: string }>;
+}) {
+  const params = await searchParams;
+  const starterKit = offers.starter_kit;
+
   return (
     <div className="section-pad py-16 md:py-24">
       <div className="container-shell space-y-8">
@@ -22,6 +30,7 @@ export default function ThankYouPage() {
               {thankYouPage.title}
             </h1>
             <p className="mx-auto max-w-3xl text-lg leading-8 text-foreground-soft md:text-xl">{thankYouPage.description}</p>
+            {params.firstName ? <p className="text-sm text-muted">Nice, {params.firstName}. The delivery links are below.</p> : null}
           </div>
         </section>
 
@@ -38,6 +47,17 @@ export default function ThankYouPage() {
 
         <section className="grid gap-5 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="space-y-5">
+            <article className="panel rounded-[var(--radius-lg)] p-6 md:p-8">
+              <span className="eyebrow">Your downloads</span>
+              <div className="mt-5 space-y-3">
+                {starterKit.deliveryAssets.map((asset) => (
+                  <a key={asset.href} href={asset.href} className="block rounded-2xl border border-border bg-background-alt px-5 py-4 transition hover:border-mint/40">
+                    {asset.label}
+                  </a>
+                ))}
+              </div>
+              {params.email ? <p className="mt-4 text-sm text-muted">Delivery contact recorded for automation: {params.email}</p> : null}
+            </article>
             {thankYouPage.bridgeCards.map((card) => (
               <article key={card.title} className="panel rounded-[var(--radius-lg)] p-6 md:p-8">
                 <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-orange-soft text-orange">
